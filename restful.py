@@ -7,7 +7,7 @@ from bson import ObjectId
 app = FastAPI()
 
 # Connect to MongoDB
-client = MongoClient("mongodb+srv://laurod3:copito@cloudservices.mj0umuk.mongodb.net/")
+client = MongoClient("mongodb+srv://<user>:<password>@cloudservices.mj0umuk.mongodb.net/")
 db = client.CloudServices  # Specify your cluster name
 collection = db.library  # Specify your database name and collection (item) name
 
